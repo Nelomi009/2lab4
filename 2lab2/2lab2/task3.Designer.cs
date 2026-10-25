@@ -145,7 +145,7 @@
       this.txtE.Name = "txtE";
       this.txtE.Size = new System.Drawing.Size(90, 20);
       this.txtE.TabIndex = 5;
-      this.txtE.Text = "0,001";
+      this.txtE.Text = "3";
       // 
       // lblFunc
       // 
@@ -162,7 +162,7 @@
       this.txtFunc.Name = "txtFunc";
       this.txtFunc.Size = new System.Drawing.Size(520, 20);
       this.txtFunc.TabIndex = 7;
-      this.txtFunc.Text = "x^2 - 4*x + 3";
+      this.txtFunc.Text = "Tan(x)";
       // 
       // labelHint
       // 
@@ -177,14 +177,14 @@
       // lblResult
       // 
       this.lblResult.Dock = System.Windows.Forms.DockStyle.Bottom;
-      this.lblResult.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Bold);
+      this.lblResult.Font = new System.Drawing.Font("Arial", 10.5F, System.Drawing.FontStyle.Bold);
       this.lblResult.ForeColor = System.Drawing.Color.DarkGreen;
-      this.lblResult.Location = new System.Drawing.Point(0, 610);
+      this.lblResult.Location = new System.Drawing.Point(0, 575);
       this.lblResult.Name = "lblResult";
-      this.lblResult.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-      this.lblResult.Size = new System.Drawing.Size(900, 40);
+      this.lblResult.Padding = new System.Windows.Forms.Padding(12, 6, 0, 0);
+      this.lblResult.Size = new System.Drawing.Size(900, 75);
       this.lblResult.TabIndex = 2;
-      this.lblResult.Text = "Результат: —";
+      this.lblResult.Text = "Корень уравнения: —\r\nf(x) = —\r\nИтераций: —";
       this.lblResult.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
       // 
       // chart1
@@ -200,7 +200,7 @@
       series1.BorderWidth = 3;
       series1.ChartArea = "Area1";
       series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-      series1.Color = System.Drawing.Color.SteelBlue;
+      series1.Color = System.Drawing.Color.Blue;
       series1.Legend = "legend";
       series1.LegendText = "f(x)";
       series1.Name = "Function";
@@ -208,13 +208,13 @@
       series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point;
       series2.Color = System.Drawing.Color.Red;
       series2.Legend = "legend";
-      series2.LegendText = "Точка минимума";
+      series2.LegendText = "Корень уравнения";
       series2.MarkerSize = 12;
       series2.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Circle;
       series2.Name = "MinPoint";
       this.chart1.Series.Add(series1);
       this.chart1.Series.Add(series2);
-      this.chart1.Size = new System.Drawing.Size(900, 486);
+      this.chart1.Size = new System.Drawing.Size(900, 451);
       this.chart1.TabIndex = 3;
       this.chart1.Text = "chart1";
       // 
